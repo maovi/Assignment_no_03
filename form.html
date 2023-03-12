@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <style>
+
+    form{
+      background-color: gray;
+      padding: 20px;
+    }
+    fieldset{
+    border: 3px solid blue;
+    }
+    legend{
+      font-size: 33px;
+      color: purple;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .inputs{
+      padding: 20px;
+    }
+
+
+    .caption{
+      text-align: center;
+      margin: 30px 0;
+      padding: 20px;
+    }
+    .caption h1{
+     color:aliceblue;
+     background-color:coral;
+     display: inline;
+     padding: 10px 15px;
+     border: 1px solid black;
+     border-radius:100px;
+    }
+    .caption P{
+      font-size:22px;
+      color: aliceblue;
+      background-color:green;
+  
+    }
+    h2{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 29px;
+    }
+    textarea{
+      font-size: 19px;
+    }
+
+
+
+    label{
+      font-size: 22px;
+      color:;
+    }
+    input{
+      height:30px;
+      background-color: coral;
+      font-size: 22px;
+      color: aliceblue;
+      letter-spacing: 2px;
+    }
+    .submit_s{
+      display: flex;
+      justify-content: end;
+    }
+    .submit{
+      padding: 0px 20px;
+      margin: 10px 20px;
+      background-color:green;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+    .reset{
+      padding: 0PX 20px;
+      margin: 10px 20px;
+      background-color: red;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+    
+
+
+
+
+  </style>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+  <form action="">
+    <fieldset>
+      <legend>Personal Informaion Form</legend>
+
+
+      <div class="caption">
+        <h1>Sign Up Form</h1>
+      <p>It's free and always be free.</p>
+      </div>
+      
+    
+      <div class="inputs">
+      <h2>Personal Information</h2>
+      <label for="first-name">First Name:</label>
+      <input type="text" name="f-name" id="f-name"><br><br>
+
+      <label for="last-name">Last Name:</label>
+      <input type="text" name="l-name" id="l-name"><br><br>
+
+      <label for="date of birth">Date of Birth:</label>
+      <input required type="datetime-local" name="date" id="date"><br><br>
+
+      <label for="gender" >Gender:</label>
+      <input type="checkbox" name="gender" id="gender" value="male">Male
+      <input type="checkbox" name="gender" id="gender" value="female">Female
+      <input type="checkbox" name="gender" id="gender" value="others">Others <br><br>
+
+      <textarea name="about" id="about" cols="60" rows="13">Write here about yourself within 99 words.</textarea>
+
+
+
+
+
+      <h2>Account Informaion</h2>
+
+      <label for="email">Email:</label>
+      <input required type="email" name="email" id="email"><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password"><br><br>
+
+      <label for="r-password">Re-type Password:</label>
+      <input type="email" name="email" id="email"><br><br>
+
+      <label for="security question">Security Question:</label>
+      <select name="s-question" id="s-question">
+        <option value="born city">Where were you born?
+        <option value="best friend">What's the certificate name of your best friend?</option>
+        <option value="primary school">What's the name of your primary school?</option>
+      </select><br><br>
+
+      <label for="s-answer">Sequrity Answer:</label>
+      <input type="text" name="s-answer" id="s-answer"><br><br>
+
+      
+      
+      <h2>Contact Information</h2>
+      <label for="address">Address:</label>
+      <input type="text" name="address" id="address"><br><br>
+
+      <label for="city">City:</label>
+      <input type="text" name="city" id="city"><br><br>
+
+      <label for="zip-code">Zip Code:</label>
+      <input type="text" name="zip-code" id="zip-code">
+      <input type="text" placeholder="optional"><br><br>
+
+
+      <div class="submit_s">
+        <input type="submit" class="submit">
+      <input class="reset" type="reset">
+      </div>
+    </div>
+
+
+    </fieldset>
+  </form>
+
+
+
+
+  
+</body>
+</html>
